@@ -1,0 +1,17 @@
+import numpy as np
+from core.implied_vol import implied_volatility
+
+def compute_vol_smile(option_chain, S, T, r, option_type="call"):
+    strikes = []
+    ivs = []
+
+    for _, row in option_chain.iterrows():
+        K = float(row["strike"])
+        market_price = float(row["price"])
+
+        iv = implied_volatility(market_price, S, K, T, r, option_type)
+        if not np.isnan(iv):
+            strikes.append(K)
+            ivs.append(iv)
+
+    return strikes, ivs
