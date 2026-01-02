@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project presents a **research-oriented computational framework** for analyzing European option pricing models through **analytical Greeks**, **implied volatility inversion**, **volatility smile construction**, **Monte Carlo benchmarking**, and **risk diagnostics**.
+This project presents a **computational framework** for analyzing European option pricing models through **analytical Greeks**, **implied volatility inversion**, **volatility smile construction**, **Monte Carlo benchmarking**, and **risk diagnostics**.
 
 Rather than proposing a speculative trading strategy, the project **reframes the Black–Scholes model as a diagnostic baseline** to:
 - identify volatility mispricing,
